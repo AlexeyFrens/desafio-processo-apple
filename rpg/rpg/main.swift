@@ -299,7 +299,9 @@ func batalha(monstro: (forcaMonstro: Int, vidaMonstro: Int), proximoCenario: Est
     
     switch escolha {
         case "1": descobrirLocal()
-        case "2": estadoAtual = proximoCenario
+        case "2":
+            estadoAtual = proximoCenario
+            jogoPrincipal()
         default: print("Erro inesperado, contate o administrador")
     }
 }
